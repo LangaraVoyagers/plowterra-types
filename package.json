@@ -1,0 +1,24 @@
+{
+  "name": "project-2-types",
+  "version": "1.0.0",
+  "description": "Shared types between frontend and backend",
+  "main": "lib/index.js",
+  "types":"lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LangaraVoyagers/project-2-types.git"
+  },
+  "author": "Voyagers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LangaraVoyagers/project-2-types/issues"
+  },
+  "homepage": "https://github.com/LangaraVoyagers/project-2-types#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
