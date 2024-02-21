@@ -1,1 +1,1 @@
-export * from "./pickers.types";
+export * from "./pickers";
