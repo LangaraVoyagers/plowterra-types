@@ -1,9 +1,9 @@
 {
   "name": "project-2-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shared types between frontend and backend",
   "main": "lib/index.js",
-  "types":"lib",
+  "types": "lib",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p ."
