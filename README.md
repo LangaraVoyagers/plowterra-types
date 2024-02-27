@@ -1,4 +1,4 @@
-# Project 2 Types 🚀
+# Project 2 Types 💅
 Team Voyagers Package
 
 Contibutors:
@@ -20,9 +20,20 @@ yarn
 ```
 
 ## Publish
+bump the version in the package.json file
+
+[major].[minor].[patch]
+- major: breaking changes, important changes on interface structure.
+- minor: non-breaking change, still important changes such as new features or new interfaces.
+- patch: small changes, bug fixes, adding properties to existing interfaces.
+
 ```bash
 yarn deploy
 ```
+
+> [!IMPORTANT]
+> Remember to commit and push your code 🙏
+
 
 ## Testing
 If you want to test your changes without publishing yet
