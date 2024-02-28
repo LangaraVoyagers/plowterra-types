@@ -39,7 +39,7 @@ npm run deploy
 If you want to test your changes without publishing yet
 
 ```bash
-yarn build
+npm run build
 ```
 
 Copy the generated `lib` folder from project-2-types to your target repository, replacing the lib folder inside the node modules
