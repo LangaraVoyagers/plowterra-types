@@ -16,7 +16,7 @@ git clone git@github.com:LangaraVoyagers/project-2-types.git
 
 Install the node packages
 ```bash
-yarn
+npm install
 ```
 
 ## Publish
@@ -28,7 +28,7 @@ bump the version in the package.json file
 - patch: small changes, bug fixes, adding properties to existing interfaces.
 
 ```bash
-yarn deploy
+npm run deploy
 ```
 
 > [!IMPORTANT]
