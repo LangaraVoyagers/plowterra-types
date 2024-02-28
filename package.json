@@ -1,6 +1,6 @@
 {
   "name": "project-2-types",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "description": "Shared types between frontend and backend",
   "main": "lib/index.js",
   "types": "lib",
@@ -21,5 +21,8 @@
   "homepage": "https://github.com/LangaraVoyagers/project-2-types#readme",
   "devDependencies": {
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "ajv": "^8.12.0"
   }
 }

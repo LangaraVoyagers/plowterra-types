@@ -15,20 +15,28 @@ export enum BloodType {
     COLLEAGUE = "Colleague",
     OTHER = "Other",
   }
-  
+
   export interface IPickerContact {
     name: string;
     phone: string;
-    relationship: Relationship;
+    relationship: keyof typeof Relationship;
   }
-  
+
+  export interface IPickerEmployment {
+    startDate: number;
+    endDate?: number;
+  }
+
   export interface IPicker {
     id: string;
     name: string;
     phone: string;
     emergencyContact: IPickerContact;
     govId: string;
-    bloodType: BloodType;
+    bloodType: keyof typeof BloodType;
     address: string;
+    score: number;
+    employment: IPickerEmployment;
   }
-  
+
+  export interface ICreatePickerRequest extends Omit<IPicker, "id"> {}
