@@ -28,7 +28,7 @@ export enum BloodType {
   }
 
   export interface IPicker {
-    id: string;
+    _id: string;
     name: string;
     phone: string;
     emergencyContact: IPickerContact;
@@ -39,4 +39,4 @@ export enum BloodType {
     employment: IPickerEmployment;
   }
 
-  export interface ICreatePickerRequest extends Omit<IPicker, "id"> {}
+  export interface ICreatePickerRequest extends Omit<IPicker, "_id"> {}
