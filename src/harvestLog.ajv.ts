@@ -41,7 +41,6 @@ const harvestLogValidator = (
     return res.status(400).json(validate.errors);
   }
   next();
-  console.log("Harvest log validated");
 };
 
 export default schema;
