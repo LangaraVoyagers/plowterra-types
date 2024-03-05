@@ -28,6 +28,6 @@ export interface ICreateHarvestLogRequest {
   collectedAmount: number;
   seasonId: string;
   pickerId: string;
-  seasonDeductions?: Array<string>;
+  seasonDeductionIds?: Array<string>;
   notes?: string;
 }

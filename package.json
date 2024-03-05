@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/LangaraVoyagers/project-2-types#readme",
   "devDependencies": {
+    "@types/express": "^4.17.21",
     "typescript": "^5.3.3"
   },
   "dependencies": {
