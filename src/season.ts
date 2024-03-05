@@ -19,6 +19,7 @@ export interface ISeason extends IAudit {
   price: number;
   status: keyof typeof StatusEnum;
   hasHarvestLog: boolean;
+  product: { id: string; name: string };
   //productID
   //unitID
   //currencyID

@@ -21,6 +21,7 @@ export interface IHarvestLogResponse {
   seasonDeductions?: Array<IDeduction>;
   totalDeduction?: number;
   notes?: string;
+  createdAt: number;
 }
 
 export interface ICreateHarvestLogRequest {
