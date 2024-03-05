@@ -11,9 +11,11 @@ const schema: JSONSchemaType<ICreateHarvestLogRequest> = {
     seasonDeductions: {
       type: "array",
       items: { type: "string" },
-      nullable: false,
+      nullable: true,
+      minItems: 1,
+      uniqueItems: true,
     },
-    notes: { type: "string", nullable: true },
+    notes: { type: "string", nullable: true, maxLength: 500 },
   },
   required: ["farmId", "seasonId", "pickerId", "collectedAmount"],
   additionalProperties: false,
