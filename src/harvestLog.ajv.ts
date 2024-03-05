@@ -1,9 +1,5 @@
-import Ajv from "ajv";
 import { JSONSchemaType } from "ajv";
 import { ICreateHarvestLogRequest } from "./harvestLog";
-import { Request, Response, NextFunction } from "express";
-
-const ajv = new Ajv();
 
 const schema: JSONSchemaType<ICreateHarvestLogRequest> = {
   type: "object",
@@ -30,18 +26,4 @@ const schema: JSONSchemaType<ICreateHarvestLogRequest> = {
   additionalProperties: false,
 };
 
-const harvestLogValidator = (
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
-  const validate = ajv.compile(schema);
-  const valid = validate(req.body);
-  if (!valid) {
-    return res.status(400).json(validate.errors);
-  }
-  next();
-};
-
 export default schema;
-export { harvestLogValidator };
