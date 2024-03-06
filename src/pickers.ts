@@ -37,6 +37,8 @@ export enum BloodType {
     address: string;
     score: number;
     employment: IPickerEmployment;
+    createdAt: number;
   }
 
-  export interface ICreatePickerRequest extends Omit<IPicker, "_id"> {}
+  export interface ICreatePickerRequest
+    extends Omit<IPicker, "_id" | "createdAt"> {}
