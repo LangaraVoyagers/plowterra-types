@@ -7,16 +7,16 @@ const schema: JSONSchemaType<ICreatePickerRequest> = {
     name: {
       type: "string",
       minLength: 1,
-      maxLenght: 50,
+      maxLength: 50,
     },
     phone: {
       type: "string",
       minLength: 6,
-      maxLenght: 13,
+      maxLength: 13,
     },
     govId: {
       type: "string",
-      maxLenght: 20,
+      maxLength: 20,
     },
     bloodType: {
       type: "string",
@@ -24,7 +24,7 @@ const schema: JSONSchemaType<ICreatePickerRequest> = {
     },
     address: {
       type: "string",
-      maxLenght: 50,
+      maxLength: 50,
     },
     score: {
       type: "number",
