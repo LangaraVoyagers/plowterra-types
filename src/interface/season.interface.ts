@@ -1,4 +1,4 @@
-import { IAudit } from "./shared";
+import { IAudit } from "./shared.interface";
 import { Schema } from "mongoose";
 
 enum PayrollTimeframeEnum {

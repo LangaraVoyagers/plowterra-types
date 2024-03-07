@@ -1,5 +1,6 @@
+import { BloodType, ICreatePickerRequest, Relationship } from "../interface/pickers.interface";
+
 import { JSONSchemaType } from "ajv";
-import { BloodType, ICreatePickerRequest, Relationship } from "./pickers";
 
 const schema: JSONSchemaType<ICreatePickerRequest> = {
   type: "object",

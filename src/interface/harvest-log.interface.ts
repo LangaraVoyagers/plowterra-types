@@ -1,7 +1,7 @@
-import { IPicker } from "./pickers";
-import { ISeason } from "./season";
+import { IDeduction } from "./deduction.interface";
+import { IPicker } from "./pickers.interface";
+import { ISeason } from "./season.interface";
 import { Schema } from "mongoose";
-import { IDeduction } from "./deduction";
 
 export interface IHarvestLog {
   id?: string;

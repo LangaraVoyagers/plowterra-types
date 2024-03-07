@@ -1,5 +1,5 @@
+import { ISignInRequest } from "../interface/signin.interface";
 import { JSONSchemaType } from "ajv";
-import { ISignInRequest } from "./signin";
 
 const schema: JSONSchemaType<ISignInRequest> = {
   type: "object",

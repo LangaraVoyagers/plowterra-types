@@ -1,5 +1,5 @@
+import { ICreateHarvestLogRequest } from "../interface/harvest-log.interface";
 import { JSONSchemaType } from "ajv";
-import { ICreateHarvestLogRequest } from "./harvestLog";
 
 const schema: JSONSchemaType<ICreateHarvestLogRequest> = {
   type: "object",
