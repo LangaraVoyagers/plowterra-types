@@ -1,7 +1,7 @@
 import { ISignInRequest } from "../interface/signin.interface";
 import { JSONSchemaType } from "ajv";
 
-const schema: JSONSchemaType<ISignInRequest> = {
+const SignInSchema: JSONSchemaType<ISignInRequest> = {
   type: "object",
   properties: {
     email: {
@@ -14,4 +14,4 @@ const schema: JSONSchemaType<ISignInRequest> = {
   additionalProperties: false,
 };
 
-export default schema;
+export default SignInSchema;

@@ -1,7 +1,7 @@
 import { ICreateHarvestLogRequest } from "../interface/harvest-log.interface";
 import { JSONSchemaType } from "ajv";
 
-const schema: JSONSchemaType<ICreateHarvestLogRequest> = {
+const HarvestLogSchema: JSONSchemaType<ICreateHarvestLogRequest> = {
   type: "object",
   properties: {
     farmId: { type: "string" },
@@ -26,4 +26,4 @@ const schema: JSONSchemaType<ICreateHarvestLogRequest> = {
   additionalProperties: false,
 };
 
-export default schema;
+export default HarvestLogSchema;

@@ -1,5 +1,5 @@
 import { IDeduction } from "./deduction.interface";
-import { IPicker } from "./pickers.interface";
+import { IPicker } from "./picker.interface";
 import { ISeason } from "./season.interface";
 import { Schema } from "mongoose";
 

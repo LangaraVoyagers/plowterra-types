@@ -1,13 +1,12 @@
 {
   "name": "project-2-types",
-  "version": "1.4.0",
+  "version": "1.4.5",
   "description": "Shared types between frontend and backend",
-  "main": "lib/index.js",
-  "types": "lib",
+  "main": "dist/index.js",
+  "types": "dist",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "move": "mv lib/ajv/* lib && mv lib/interface/* lib",
-    "build": "tsc -p . && npm run move && esbuild 'lib/*.ajv.js' --minify --outdir=dist/ajv && esbuild 'lib/*.interface.js' --minify --outdir=dist/interface",
+    "build": "tsc -p . && esbuild 'lib/ajv/*.js' --minify --outdir=dist/ajv && esbuild 'lib/interface/*.js' --minify --outdir=dist/interface && cp lib/index.* dist && cp lib/ajv/*.d.ts dist/ajv && cp lib/interface/*.d.ts dist/interface",
     "deploy": "npm run build && npm publish --access public"
   },
   "repository": {

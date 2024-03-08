@@ -1,4 +1,4 @@
-export * from "./pickers.interface";
+export * from "./picker.interface";
 export * from "./season.interface";
 export * from "./deduction.interface";
 export * from "./harvest-log.interface";
