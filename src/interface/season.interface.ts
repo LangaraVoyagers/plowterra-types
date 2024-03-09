@@ -1,12 +1,12 @@
 import { IAudit } from "./shared.interface";
 import { Schema } from "mongoose";
 
-enum PayrollTimeframeEnum {
+export enum PayrollTimeframeEnum {
   WEEKLY = "Weekly",
   BIWEEKLY = "Bi-Weekly",
   MONTHLY = "Monthly",
 }
-enum StatusEnum {
+export enum StatusEnum {
   ACTIVE = "Active",
   CLOSED = "Closed",
 }
