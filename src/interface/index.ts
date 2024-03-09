@@ -4,3 +4,4 @@ export * from "./deduction.interface";
 export * from "./harvest-log.interface";
 export * from "./shared.interface";
 export * from "./signin.interface";
+export * from "./product.interface";
