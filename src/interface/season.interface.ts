@@ -30,3 +30,27 @@ export interface ISeasonDeduction {
   deductionID: Schema.Types.ObjectId;
   price: number;
 }
+
+export interface ISeasonRequest {
+  name: string;
+  startDate: number;
+  payrollTimeframe: keyof typeof PayrollTimeframeEnum;
+  price: number;
+  farmId: string;
+  productId: string;
+  unitId: string;
+  currencyId: string;
+  deductions: Array<ISeasonDeduction>;
+}
+
+export interface ISeasonResponse {
+  name: string;
+  startDate: number;
+  payrollTimeframe: keyof typeof PayrollTimeframeEnum;
+  //endDate: number;
+  price: number;
+  status: keyof typeof StatusEnum;
+  product: { _id: string; name: string };
+  hasHarvestLog: boolean;
+  deductions: Array<ISeasonDeduction>;
+}
