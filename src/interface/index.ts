@@ -5,3 +5,4 @@ export * from "./harvest-log.interface";
 export * from "./shared.interface";
 export * from "./signin.interface";
 export * from "./product.interface";
+export * from "./payroll.interface"
