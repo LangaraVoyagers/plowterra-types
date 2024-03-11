@@ -8,6 +8,8 @@ export interface IPayrollResponse {
     name: string
     price: number
     product: string
+    unit: string
+    currency: string
   }
   totals: {
     netAmount: number
@@ -15,7 +17,12 @@ export interface IPayrollResponse {
     grossAmount: number
     deductions: number
   }
-  lastPayroll: {} | null
+  lastPayroll: {
+    nextEstimatedPayroll: {
+      startDate: number
+      endDate: number
+    }
+  } | null
   harvestLogIds: Array<string>
   details: Array<{
     picker: {
