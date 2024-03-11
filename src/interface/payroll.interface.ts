@@ -1,4 +1,4 @@
-export interface IPayrollRepsonse {
+export interface IPayrollResponse {
   farmId: string
   startDate: number
   endDate: number
