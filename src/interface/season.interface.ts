@@ -44,13 +44,14 @@ export interface ISeasonRequest {
 }
 
 export interface ISeasonResponse {
-  name: string;
-  startDate: number;
-  payrollTimeframe: keyof typeof PayrollTimeframeEnum;
-  //endDate: number;
-  price: number;
-  status: keyof typeof StatusEnum;
-  product: { _id: string; name: string };
-  hasHarvestLog: boolean;
-  deductions: Array<ISeasonDeduction>;
+  _id: string
+  name: string
+  startDate: number
+  endDate: number
+  status: keyof typeof StatusEnum
+  payrollTimeframe: keyof typeof PayrollTimeframeEnum
+  price: number
+  product: { _id: string; name: string }
+  hasHarvestLog: boolean
+  deductions: Array<ISeasonDeduction>
 }
