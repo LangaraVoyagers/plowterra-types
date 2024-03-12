@@ -32,15 +32,15 @@ export interface ISeasonDeduction {
 }
 
 export interface ISeasonRequest {
-  name: string;
-  startDate: number;
-  payrollTimeframe: keyof typeof PayrollTimeframeEnum;
-  price: number;
-  farmId: string;
-  productId: string;
-  unitId: string;
-  currencyId: string;
-  deductions: Array<ISeasonDeduction>;
+  name: string
+  startDate: number
+  payrollTimeframe: keyof typeof PayrollTimeframeEnum
+  price: number
+  farmId: string
+  productId: string
+  unitId: string
+  currencyId: string
+  deductions: Array<{ deductionID: string; price: number }>
 }
 
 export interface ISeasonResponse {
