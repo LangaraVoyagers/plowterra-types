@@ -1,4 +1,4 @@
-export interface IProduct {
+export interface IUnit {
   _id: string
   name: string
 }

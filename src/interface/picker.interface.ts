@@ -27,18 +27,18 @@ export interface IPickerEmployment {
   endDate?: number;
 }
 
-export interface IPicker {
-  _id: string;
-  name: string;
-  phone: string;
-  emergencyContact: IPickerContact;
-  govId: string;
-  bloodType: keyof typeof BloodType;
-  address: string;
-  score: number;
-  employment: IPickerEmployment;
-  createdAt: number;
+export interface IPickerResponse {
+  _id: string
+  name: string
+  phone: string
+  emergencyContact: IPickerContact
+  govId: string
+  bloodType: keyof typeof BloodType
+  address: string
+  score: number
+  employment: IPickerEmployment
+  createdAt: number
 }
 
 export interface ICreatePickerRequest
-  extends Omit<IPicker, "_id" | "createdAt"> {}
+  extends Omit<IPickerResponse, "_id" | "createdAt"> {}

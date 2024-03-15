@@ -1,5 +1,4 @@
-import { IAudit } from './shared.interface';
-
-export interface IDeduction extends IAudit {
-  name: string;
+export interface IDeduction {
+  _id: string
+  name: string
 }

@@ -1,4 +1,6 @@
-export interface IPayrollResponse {
+import { IAudit } from "./shared.interface"
+
+export interface IPayrollResponse extends IAudit {
   farmId: string
   startDate: number
   endDate: number
@@ -23,6 +25,10 @@ export interface IPayrollResponse {
       endDate: number
     }
   } | null
+  nextEstimatedPayroll: {
+    startDate: number
+    endDate: number
+  }
   harvestLogIds: Array<string>
   details: Array<{
     picker: {
