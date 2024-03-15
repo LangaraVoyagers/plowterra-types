@@ -33,3 +33,15 @@ export interface ISeasonResponse extends IAudit {
   hasHarvestLog: boolean
   deductions: Array<ISeasonDeduction>
 }
+
+export interface ISeasonRequest {
+  name: string
+  startDate: number
+  payrollTimeframe: keyof typeof PayrollTimeframeEnum
+  price: number
+  farmId: string
+  productId: string
+  unitId: string
+  currencyId: string
+  deductions: Array<{ deductionID: string; price: number }>
+}
