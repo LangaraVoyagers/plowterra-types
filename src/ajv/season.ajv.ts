@@ -37,8 +37,8 @@ const SeasonSchema: JSONSchemaType<ISeasonRequest> = {
       type: "array",
       items: {
         type: "object",
-        deductionID: "string",
-        price: "number",
+        "deductionID": "string",
+        "price": "number",
         required: [
           "deductionID", 
           "price"
