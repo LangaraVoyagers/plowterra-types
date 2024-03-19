@@ -1,12 +1,12 @@
 {
   "name": "project-2-types",
-  "version": "2.0.3",
+  "version": "2.0.5",
   "description": "Shared types between frontend and backend",
   "main": "dist/index.js",
   "types": "dist",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc -p . && cp -R lib dist",
+    "build": "tsc -p . && mkdir -p dist && cp -rf lib/* dist",
     "deploy": "npm run build && npm publish --access public"
   },
   "repository": {
