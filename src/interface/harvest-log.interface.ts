@@ -22,4 +22,5 @@ export interface ICreateHarvestLogRequest {
   pickerId: string;
   seasonDeductionIds?: Array<string>;
   notes?: string;
+  parentId?: string;
 }
