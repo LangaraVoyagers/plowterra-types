@@ -21,6 +21,10 @@ const HarvestLogSchema: JSONSchemaType<ICreateHarvestLogRequest> = {
       nullable: true,
       maxLength: 500,
     },
+    parentId: {
+      type: "string",
+      nullable: true,
+    },
   },
   required: ["farmId", "seasonId", "pickerId", "collectedAmount"],
   additionalProperties: false,
